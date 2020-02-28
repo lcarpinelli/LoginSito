@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@model InfoControl
+
+
+
+
+    <form method="post" asp-controller="Login" asp-action="Control"  class="text-center" style="border-style:dotted">
+        <br />
+        <h1>Effettua il Login</h1>
+        <br />
+        <div class="form-group">
+            Username: <input required asp-for="Username" />
+            <br />
+            <br />
+            Password: <input required asp-for="Password" />
+            <br />
+            <br />
+            <button type="submit" class="btn btn-primary">Invia</button>
+        </div>
+    </form>
+
